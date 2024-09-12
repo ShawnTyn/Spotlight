@@ -1,0 +1,54 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+        author: '季顺天',
+        date: '2022-09-05',
+        title: '我青睐的网页与App开发技术栈',
+        description: '我常用的网站与App开发使用的编程语言、技术选型等。',
+}
+
+export const metadata = {
+        title: article.title,
+        description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+我常用的网站与App开发使用的编程语言、技术选型等。
+
+## 编程语言
+
+1. Typescript（能用它实现的，我都懒得用其他语言）
+2. Python（torch目前不得不用，用fastapi写点接口也很方便）
+3. Go（天然并发，编码体验与性能兼具）
+4. Java（国内后端用的最多）
+5. Rust（安全与性能拉满的系统级语言）
+
+墙裂推荐前端、后端、app都能写的Typescript！
+前端几乎只能用js，不建议取巧使用其他语言。
+我的项目中能用Typescript实现的就只用它，避免使用过多的语言。
+根据所处的领域选择最合适的语言，每门语言在不同领域的社区活跃度不一样。
+
+## 前端框架
+
+1. Nextjs
+2. Tailwindcss
+3. Tailwind UI
+4. shadcn/ui
+
+Nextjs是我最青睐的React生态的全栈框架，也可以作为SSG和SPA框架。Vue生态也有对标的Nuxtjs。Tailwindcss是我在任何前端项目中都会使用的原子级css框架，极大增加了编码的效率和灵活性。Tailwind UI和shadcn/ui是我最青睐的组件库，里面的组件高级优雅。
+
+## 后端框架
+
+1. Nestjs
+2. fastapi
+3. Gin
+4. Spring
+
+能直接在全栈框架中实现的情况下，甚至不需要后端。
+需要少许简单接口、算法接口、llm api的情况下，只使用fastapi就可以轻松实现。
+gin适合高并发环境，能比较简单轻松的扛过压测。
+spring适合整合java生态多种框架的中大型项目。
+
+## 其他
+想写了再写······
